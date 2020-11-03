@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center bg-dark text-white">
+                <h4>Quản lý nhân viên</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <div class="form-label">Mã nhân viên</div>
+                    <input type="text" id="maNhanVien" class="form-control">
+                    <p class="text-danger null-maNV"></p>
+                    <p class="text-danger length-maNV"></p>
+                </div>
+                <div class="form-group">
+                    <div class="form-label">Tên nhân viên</div>
+                    <input type="text" id="tenNhanVien" class="form-control">
+                    <p class="text-danger null-tenNV"></p>
+                    <p class="text-danger length-tenNV"></p>
+                    <p class="text-danger dinhdang-tenNV"></p>
+                </div>
+                <div class="form-group">
+                    <div class="form-label">Chức vụ</div>
+                    <select name="" id="chucVu" class="form-control">
+                        <option value="3">Giám đốc</option>
+                        <option value="2">Trưởng phòng</option>
+                        <option value="1">Nhân viên</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="form-label">Lương cơ bản</div>
+                    <input type="text" id="luongCoBan" class="form-control">
+                    <p class="text-danger null-luongCoBan"></p>
+                    <p class="text-danger giatri-luongCoBan"></p>
+                </div>
+                <div class="form-group">
+                    <div class="form-label">Số giờ làm trong tháng</div>
+                    <input type="text" id="soGioLam" class="form-control">
+                    <p class="text-danger null-soGioLam"></p>
+                    <p class="text-danger giatri-soGioLam"></p>
+                </div>
+                <button class="btn float-right btn-primary ml-3" id="btnSave">Lưu thông tin</button>
+                <button class="btn float-right text-success border-success" id="btn">Thêm nhân viên</button>
+            </div>
+        </div>
+        <div class="card">
+            <table class="table">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th>Mã nhân viên</th>
+                        <th>Tên nhân viên</th>
+                        <th>Chức vụ</th>
+                        <th>Lương cơ bản</th>
+                        <th>Tổng lương</th>
+                        <th>Giờ làm/tháng</th>
+                        <th>Xếp loại nhân viên</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tableNhanVien">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./Validation.js"></script>
+    <script src="./NhanVien.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
